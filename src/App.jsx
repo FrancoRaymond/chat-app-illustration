@@ -8,8 +8,8 @@ function App() {
 
   return (
     <div className='relative mainDiv flex justify-center'>
-      <div className='phone'>
-        <div className='border-[12px] border-white w-[320px] bg-[#f5f3f8] rounded-4xl'>
+      <div className='phone md:grid md:grid-cols-2 w-[350px] md:w-[80%] lg:w-[70%] items-center bg-transparent'>
+        <div className='border-[12px] border-white grow max-w-[350px] bg-[#f5f3f8] rounded-4xl'>
           <header className='p-3'>
             <div className='min-h-8 w-[60%] bg-white rounded-bl-3xl rounded-br-3xl mx-auto -mt-4'></div>
             <div className='flex items-center gap-2.5 mt-2.5'>
@@ -55,9 +55,9 @@ function App() {
             <div className='size-7 rounded-full ml-2 bg-[#3d2754]'></div>
           </div>
         </div>
-        <div>
-          <h1 className='text-[#3d2754] font-semibold text-3xl text-center my-7'>Simple booking</h1>
-          <p className='text-center text-gray-400 mb-10'>Stay in touch with our dog walkers through the chat interface. This makes it easy to discuss arrangements and make bookings. Once the walk has been completed you an rate your walker and book again all through the chat.</p>
+        <div className='md:px-5 lg:px-10 text-center md:text-left'>
+          <h1 className='text-[#3d2754] font-semibold text-3xl my-7'>Simple booking</h1>
+          <p className=' text-gray-400 mb-10'>Stay in touch with our dog walkers through the chat interface. This makes it easy to discuss arrangements and make bookings. Once the walk has been completed you an rate your walker and book again all through the chat.</p>
         </div>
       </div>  
     </div>

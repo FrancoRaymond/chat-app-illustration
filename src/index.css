@@ -1,17 +1,31 @@
 @import "tailwindcss";
 
 body{
-  @apply bg-[#f5f3f8] max-w-[1440px]
+  @apply bg-[#f5f3f8]
+ 
 }
-.mainDiv{
+.mainDiv::before{
   position: absolute;
   content: "";
-  top: 0;
-  left: 0;
+  top: 0px;
+  left: 0px;
   width: 50%;
-  height: 70%;
+  max-width: 350px;
+  height: 60%;
   background:  hsl(264, 100%, 61%);
   border-radius: 0 0 250px 0;
+  z-index: 0;
+}
+.mainDiv::after{
+  position: absolute;
+  content: "";
+  bottom: 0px;
+  right: 0px;
+  width: 50%;
+  max-width: 350px;
+  height: 60%;
+  background:  rgb(233, 233, 233);
+  border-radius: 250px 0 0 0;
   z-index: 0;
 }
 
@@ -23,8 +37,7 @@ header{
   background: linear-gradient(to right,hsl(293, 100%, 63%), hsl(264, 100%, 61%));
 }
 .phone{
-  position: absolute;
-  top: 50px;
-  left: 100%;
-  transform: translateX(-50%);
+  z-index: 100;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
