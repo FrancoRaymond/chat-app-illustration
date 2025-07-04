@@ -1,9 +1,12 @@
 @import "tailwindcss";
 
 body{
-  @apply bg-[#f5f3f8]
- 
+  background-color: #f5f3f8;
+  font-family: "Rubik", sans-serif;
+  max-width: 1440px;
+  margin: 0 auto;
 }
+
 .mainDiv::before{
   position: absolute;
   content: "";

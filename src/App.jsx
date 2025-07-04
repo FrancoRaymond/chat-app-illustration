@@ -3,6 +3,7 @@ import avatar from './assets/images/avatar.jpg'
 import dog1 from './assets/images/dog-image-1.jpg'
 import dog2 from './assets/images/dog-image-2.jpg'
 import dog3 from './assets/images/dog-image-3.jpg'
+import back from './assets/images/back.svg'
 
 function App() {
 
@@ -13,7 +14,7 @@ function App() {
           <header className='p-3'>
             <div className='min-h-8 w-[60%] bg-white rounded-bl-3xl rounded-br-3xl mx-auto -mt-4'></div>
             <div className='flex items-center gap-2.5 mt-2.5'>
-              <button className='font-bold text-white cursor-pointer'>{"<"}</button>
+              <button className='font-bold text-white cursor-pointer'><img src={back} alt="" className='size-5'/></button>
               <div className='flex items-center gap-2.5 grow'>
                 <img src={avatar} alt="" className='size-10 rounded-full border-2 border-white'/>
                 <div className='flex flex-col'>
@@ -52,7 +53,7 @@ function App() {
           </div>
           <div className='flex items-center bg-white rounded-3xl mt-3 w-[90%] my-2 p-3 mx-auto'>
           <input type="text" className='text-sm text-gray-500 bg-white outline-0 grow' placeholder='Type a message...'/>
-            <div className='size-7 rounded-full ml-2 bg-[#3d2754]'></div>
+            <div className='p-2 rounded-full ml-2 bg-[#3d2754]'><img src={back} alt="" className='rotate-180 size-4'/></div>
           </div>
         </div>
         <div className='md:px-5 lg:px-10 text-center md:text-left'>
