@@ -52,7 +52,7 @@ function App() {
             </article>
           </div>
           <div className='flex items-center bg-white rounded-3xl mt-3 w-[90%] my-2 p-3 mx-auto'>
-          <input type="text" className='text-sm text-gray-500 bg-white outline-0 grow' placeholder='Type a message...'/>
+          <input type="text" readOnly className='text-sm text-gray-500 bg-white outline-0 grow' placeholder='Type a message...'/>
             <div className='p-2 rounded-full ml-2 bg-[#3d2754]'><img src={back} alt="" className='rotate-180 size-4'/></div>
           </div>
         </div>
